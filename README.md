@@ -24,7 +24,7 @@ This is my ecommerce. Here we sell many products.
 ## Setup Instructions
 
 ### Prerequisites
-- Python (Version 3.9.4)
+- Python (Version 3.10.1)
 - Django (Version 4.2.9)
 
 ### Installation
