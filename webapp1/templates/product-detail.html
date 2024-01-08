@@ -672,62 +672,31 @@
 
 {% block js %}
 <script>
-
-console.log('ok')
-
 picture_product = '/media/{{get_product.image}}';
-console.log(picture_product)
 
 // if the add to card button is clicked, add/increament the item
 
 $('.product_cart').click({abc:"picture_product"}, function(){
 	// $('.divproduct').on('click', 'button.product_cart', function(){
-	console.log('clicked now');
-
-	console.log("picture : ");
-	console.log(picture_product);
-
-	// console.log(product_cart)
 	var idstr = this.id.toString();
-	console.log("id...."+idstr);
-
 
 	if (product_cart[idstr] != undefined){
-		console.log('old')
 		qty = product_cart[idstr][0] + 1;
-		console.log(product_cart[idstr]);
 	}
-
 	else{
-		console.log(idstr)
 		// qty = 1;
-
 		var qty = document.getElementById("qty_product").value;
-
-
 		// qty = document.getElementById('qty_product').value;
 		// document.getElementById("myText").value = "Johnny Bravo";
-		console.log(qty)
-
 
 		name = document.getElementById('name' + idstr).innerHTML;
 		price = document.getElementById('price' + idstr).innerHTML;
 
-
-
 		product_cart[idstr] = [parseInt(qty), name, parseInt(price), picture_product];
-		console.log(product_cart[idstr]);
-		console.log('new')
 	}
-	// console.log("before update");
-	// console.log(product_cart);
-
 	b=`<button class="btn btn-danger"> Added to Cart</button>`
-
 	document.getElementById('changecolor' + idstr).innerHTML = b;
-
 	updateCart(product_cart,idstr);
-
 	});
 
 
@@ -737,13 +706,9 @@ item_id='product'+'{{get_product.id}}';
 updateaddtoCart(product_cart,item_id);
 
 function updateaddtoCart(product_cart,item){
-	    console.log("items..."+item);
-	    console.log("carts..."+product_cart);
 		pro = product_cart[item][1];
-		console.log(pro);
 
 		if (product_cart[item][1]){
-			console.log('old')
 			b=`<button class="btn btn-danger mt-4 pl-4 pr-4"> Added to Cart</button>`
 			document.getElementById('changecolor' + item).innerHTML = b;
 	}
