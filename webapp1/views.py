@@ -21,7 +21,10 @@ def handler404(request, exception):
 
 
 import stripe
-stripe.api_key = "sk_test_51IWuSRFzvY3Oon8KHXlURApAt4rjhN1qKfh37Xvcwam0uzfvzZt8o3TJCirb5uFParGlho3a15S6V2s0mZLXsaOg00woMU6Fen"
+from django.conf import settings
+
+
+
 
 
 
@@ -327,15 +330,19 @@ def checkout(request):
 
 class PaymentView(View):
     def get(self, *args, **kwargs):
+        publishable_key = settings.STRIPE_PUBLISHABLE_KEY
         user = self.request.user
         order = Order.objects.get(user=user, ordered=False)
         context = {
             'order': order,
-            "DISPLAY_COUPON_FORM": False
+            "DISPLAY_COUPON_FORM": False,
+            'publishable_key':publishable_key,
         }
         return render(self.request, 'payment.html', context)
 
     def post(self, *args, **kwargs):
+        secret_key = settings.STRIPE_SECRET_KEY
+        stripe.api_key = secret_key
         user=self.request.user
         order = Order.objects.get(user=user, ordered=False)
         try:
