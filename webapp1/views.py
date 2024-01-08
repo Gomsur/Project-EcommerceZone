@@ -17,7 +17,6 @@ from django.views.generic import ListView, DetailView, View
 
 
 def handler404(request, exception):
-    print('404-not found')
     return render(request, "404-Page.html", status=404)
 
 
@@ -35,7 +34,6 @@ def index(request):
 
 def product_search(request):
     search_product  = request.GET.get('search')
-    print(search_product)
 
     if search_product:
         search_result = products.objects.filter(Q(product_name__icontains = search_product) | Q(description__icontains = search_product)).order_by('-id')
@@ -58,7 +56,6 @@ def contact(request):
     if request.method=="POST":
         email=request.POST.get('email')
         msg=request.POST.get('msg')
-        print(email, msg)
 
         contactus = contact_us(email=email, message=msg)
         contactus.save()
@@ -229,16 +226,13 @@ def product_detail(request, pk):
         total_ratings=0
         for i in filter_product_reviews:
             total_ratings = total_ratings + int(i.ratings)
-            print(total_ratings)
 
         if filter_product_reviews_qty==0:
             average_rating = 0
         else:
             average_rating = total_ratings/filter_product_reviews_qty
-            print(average_rating)
 
         average_rating = "%0.1f" % average_rating
-
 
         context2 = {'get_product':get_product, 'all_pro_cat':all_pro_cat, 'filter_product_reviews':filter_product_reviews, 'filter_product_reviews_qty':filter_product_reviews_qty, 'average_rating':average_rating}
         return render(request, 'product-detail.html', context2)
@@ -288,8 +282,6 @@ def checkout(request):
     if request.method =="POST":
         prod_details = request.POST.get('prod_details')
         checkout_money = request.POST.get('checkout_money')
-        print('total')
-        print(checkout_money, prod_details)
 
         first_name = request.POST.get('first_name')
         last_name = request.POST.get('last_name')
@@ -299,19 +291,16 @@ def checkout(request):
         street = request.POST.get('street')
         city = request.POST.get('city')
         zip = request.POST.get('zip')
-        # print(full_address, city, postal_code, country, phone)
 
         # make random order ID
         random_num = random.randint(2345678909800, 9923456789000)
 
         uniqe_confirm = Order.objects.filter(order_id=random_num)
-        # print(random_num)
 
         while uniqe_confirm:
             random_num = random.randint(234567890980000, 992345678900000)
             if not Order.objects.filter(order_id=random_num):
                 break
-        # print(random_num)
 
         user = request.user
 
@@ -320,10 +309,8 @@ def checkout(request):
                            country=country, street=street, city=city, zip=zip)
         post_order.save()
         order_id = post_order.order_id
-        # print(order_id)
 
         Thank = True
-
         return render(request, 'checkout.html', {'Thank': Thank, 'order_id': order_id})
 
     else:
