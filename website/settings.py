@@ -131,20 +131,20 @@ USE_TZ = True
 import os
 
 # static files
-STATIC_URL = '/static/'
+STATIC_URL = 'static/'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # Adjust this path as needed
 
+django_heroku.settings(locals())
+
 
 # for image upload
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 MEDIA_URL='/media/'
 
-
-django_heroku.settings(locals())
 
 
 #Email Settings
@@ -154,7 +154,7 @@ EMAIL_PORT = '587'
 EMAIL_HOST_USER = ''
 EMAIL_HOST_PASSWORD = ''
 EMAIL_USE_TLS = True
-DEFAULT_FROM_EMAIL= 'Febmom <Febmom@support>'
+DEFAULT_FROM_EMAIL= 'ecommerce <ecommerce@support>'
 
 
 # stripe settings
