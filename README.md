@@ -24,8 +24,8 @@ This is my ecommerce. Here we sell many products.
 ## Setup Instructions
 
 ### Prerequisites
-- Python (Version X.X)
-- Django (Version X.X)
+- Python (Version 3.8.10)
+- Django (Version 4.2.9)
 
 ### Installation
 1. Clone the repository: `git clone https://github.com/your_username/your_project.git`
