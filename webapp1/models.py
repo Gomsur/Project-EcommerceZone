@@ -1,8 +1,6 @@
 from django.db import models
-
 from django.contrib.auth.models import User
 from datetime import datetime
-
 from django.db.models.signals import post_save
 from django.dispatch import receiver
 import hashlib
@@ -62,25 +60,16 @@ class products(models.Model):
         total_ratings = 0
         for i in filter_product_reviews:
             total_ratings = total_ratings + int(i.ratings)
-            # print(total_ratings)
         if filter_product_reviews_qty == 0:
             average_rating = 0
         else:
             average_rating = total_ratings / filter_product_reviews_qty
-            print(average_rating)
         average_rating = "%0.1f" % average_rating
         return average_rating
 
     def product_reviews_qty(self):
         filter_product_reviews_qty = reviews.objects.filter(product=self).count()
         return filter_product_reviews_qty
-
-# class Tracking_the_order(models.Model):
-#     order_status_id = models.CharField(max_length=2000)
-#     status = models.CharField(max_length=2000)
-#
-#     def __str__(self):
-#         return self.status
 
 
 
