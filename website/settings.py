@@ -161,3 +161,8 @@ DEFAULT_FROM_EMAIL= 'ecommerce <ecommerce@support>'
 # stripe settings
 STRIPE_PUBLISHABLE_KEY = 'pk_test_51IWuSRFzvY3Oon8K8D1ifAh7gdslJbsw3KJbpkDzsL6hD0Ghy3ofVA1xjLk5eZHOzZnUta8A0fykbjP0ScpxTe5m00PLxoAn9p'
 STRIPE_SECRET_KEY = 'sk_test_51IWuSRFzvY3Oon8KHXlURApAt4rjhN1qKfh37Xvcwam0uzfvzZt8o3TJCirb5uFParGlho3a15S6V2s0mZLXsaOg00woMU6Fen'
+
+
+CSRF_USE_SESSIONS=True
+CSRF_COOKIE_SECURE=True
+CSRF_FAILURE_VIEW=True
