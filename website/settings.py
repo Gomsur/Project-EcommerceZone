@@ -28,7 +28,7 @@ SECRET_KEY = ')9&b2*-19ld600y_3+g6liui5!d)kc-w)nj(xklm+tmj8#oj_d'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '*']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'django-ecom-zone-1-70efee035f25.herokuapp.com', '*']
 
 SITE_ID = 1
 
