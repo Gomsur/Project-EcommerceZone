@@ -422,7 +422,18 @@
 					<!-- Block2 -->
 					<div class="block2">
 						<div class="block2-pic hov-img0">
-							<img src="/media/{{all_prod.image}}" alt="{% static 'webapp1/images/default.png' %}" height="300">
+<!--							<img src="/smedia/{{all_prod.image}}" alt="https://django-ecom-zone-1-70efee035f25.herokuapp.com/static/webapp1/images/slide01.jpg" height="300">-->
+
+
+
+							{% if all_prod.image and all_prod.image.url %}
+								<img src="/media/{{all_prod.image}}" alt="Your Image">
+							{% else %}
+								<img src="/static/webapp1/images/slide01.jpg" alt="Default Image">
+							{% endif %}
+
+
+
 
 <!--							<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">-->
 <!--								Quick View-->
