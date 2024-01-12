@@ -146,6 +146,31 @@ django_heroku.settings(locals())
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 MEDIA_URL='/media/'
 
+# s3 configuration
+# AWS_ACCESS_KEY_ID = 'AKIAYS2NU2KI4WCNJTEX'
+# AWS_SECRET_ACCESS_KEY = '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'
+# AWS_STORAGE_BUCKET_NAME = 'gomosorbucket'
+# AWS_S3_SIGNATURE_NAME = 's3v4'
+# AWS_S3_REGION_NAME = 'eu-north-1'
+# AWS_S3_FILE_OVERWRITE = False
+# AWS_DEFAULT_ACL = None
+# AWS_S3_VERITY = True
+# DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+
+
+# Use Amazon S3 for storage for uploaded media files.
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+
+# Amazon S3 settings
+AWS_ACCESS_KEY_ID = 'AKIAYS2NU2KI4WCNJTEX'
+AWS_SECRET_ACCESS_KEY = '6QAV6aSCGvuKXOL8uJiIPsomGKRoMMiYsrS8Hh6J'
+AWS_STORAGE_BUCKET_NAME = 'gomosorbucket'
+AWS_S3_SIGNATURE_VERSION = 's3v4'
+AWS_S3_REGION_NAME = 'eu-north-1'  # e.g., 'us-west-2'
+AWS_S3_FILE_OVERWRITE = False
+AWS_DEFAULT_ACL = None
+# Optional: Set the URL for the bucket to serve static files
+AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
 
 
 #Email Settings
