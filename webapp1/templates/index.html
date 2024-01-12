@@ -422,15 +422,10 @@
 					<!-- Block2 -->
 					<div class="block2">
 						<div class="block2-pic hov-img0">
-<!--							<img src="/smedia/{{all_prod.image}}" alt="https://django-ecom-zone-1-70efee035f25.herokuapp.com/static/webapp1/images/slide01.jpg" height="300">-->
+							<img src="{{all_prod.image.url}}" alt="https://django-ecom-zone-1-70efee035f25.herokuapp.com/static/webapp1/images/slide01.jpg" height="300">
 
 
 
-							{% if all_prod.image.url|image_exists %}
-								<img src="{{all_prod.image.url}}" alt="Your Image">
-							{% else %}
-								<img src="/static/webapp1/images/default.png" alt="Default Image">
-							{% endif %}
 
 
 
