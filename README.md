@@ -4,7 +4,7 @@ Welcome to Ecommerce-Zone. We have watchs of all brands for you and your loved o
 
 Payment System: Stripe.
 
-![Ecommerce-Zone](https://gomosorbucket.s3.amazonaws.com/1_Gedn9fj.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAYS2NU2KI4WCNJTEX%2F20240114%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20240114T090443Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=1a368d8a1cd99e7229f979f0e8bbd17aca8b8c5010e5e2fc1040760d17417684)
+![Ecommerce-Zone](/docs/readme_images/home1.PNG)
 
 Ecommerce-Zones is a responsive Django web application that allows users to view information about the watcah shop.
 
