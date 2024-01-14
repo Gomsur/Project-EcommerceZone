@@ -1,6 +1,8 @@
 # Ecommerce-Zone
 
-Welcome to Ecommerce-Zone. We have watchs of all brands and accessories for you and your loved ones. Explore the local neighborhood in style & comfort on our watchs.
+Welcome to Ecommerce-Zone. We have watchs of all brands for you and your loved ones. Explore the local neighborhood in style & comfort on our watchs.
+
+Payment System: Stripe.
 
 ![Ecommerce-Zone](https://gomosorbucket.s3.amazonaws.com/1_Gedn9fj.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAYS2NU2KI4WCNJTEX%2F20240114%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20240114T090443Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=1a368d8a1cd99e7229f979f0e8bbd17aca8b8c5010e5e2fc1040760d17417684)
 
@@ -30,20 +32,20 @@ Click the link below to access Ecommerce-Zones and the watch collection.
     + [Theming And Colors](#theming-and-colors)
   * [Ecommerce-Zone' Store Pages](#robert-s-watch-store-pages)
     + [Home Page](#home-page)
+    + [Product Details Page](#product-details-page)
     + [About Page](#about-page)
-    + [Accessories Page](#accessories-page)
     + [Login Page](#login-page)
-    + [Register Page](#register-page)
-    + [Contact Page](#reserve-watchs-page)
-    + [Search watchs Page](#manage-watchs-page)
+    + [Login and Register Page](#login-page/egister-page)
+    + [Contact Page](#contact-page)
+    + [Cart Page](#cart-page)
+    + [Checkout Page](#checkout-page)
+    + [Payment Page](#payment-page)
   * [Security For Ecommerce-Zones](#security-for-robert-s-watch)
     + [Super Admin Users](#super-admin-users)
     + [Standard Authenticated Users](#standard-authenticated-users)
   * [Known Bugs](#known-bugs)
   * [Ecommerce-Zone's Deployment](#robert-s-watchs-deployment)
     + [Ubuntu Linux Server](#ubuntu-linux-server)
-    + [Deploy Postgres Database](#deploy-postgres-database)
-    + [Deploying Ecommerce-Zone'](#deploying-robert-s-watch)
     + [Preview Ecommerce-Zone's](#preview-robert-s-watchs)
   * [Credits](#credits)
   * [Quick Start Installation](#quick-start-installation)
@@ -70,7 +72,7 @@ Ecommerce-Zone's is built with the following technologies.
 
 ## Ecommerce-Zones Features & Goals
 
-![Ecommerce-Zone Home](/docs/screenshots/home.png)
+![Ecommerce-Zone Home](https://gomosorbucket.s3.amazonaws.com/home1.PNG?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAYS2NU2KI4WCNJTEX%2F20240114%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20240114T095846Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=8e5edac74d6601f09384b52e5c84e8507639db60071da22ff97f6463022df157)
 
 ### watch Guest Goals
 
@@ -134,8 +136,6 @@ Features for site administration users of the Ecommerce-Zone's django applicatio
 
     As a watch employee i can manage the watchs in the systems so that i modify watchs as needed
 
-    As a watch employee i can manage the watch reservations in the system so that i can get see which watchs are rented
-
     As a watch employee i can return a customer's watch so that assist our customer with watch reservations
 
 ### watch Site Administrator User Stories
@@ -168,43 +168,53 @@ Ecommerce-Zone's uses the `lumen` theme set.
 
 the home page is the initial landing page for Ecommerce-Zone's. the home provides text about Ecommerce-Zone's and what we offer.
 
-![home page](/docs/screenshots/home.png)
+![home page](https://gomosorbucket.s3.amazonaws.com/home1.PNG?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAYS2NU2KI4WCNJTEX%2F20240114%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20240114T095846Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=8e5edac74d6601f09384b52e5c84e8507639db60071da22ff97f6463022df157)
+![home page](https://gomosorbucket.s3.amazonaws.com/Capture.PNG?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAYS2NU2KI4WCNJTEX%2F20240114%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20240114T095846Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=c9fb922a6868f5d140cf156f123c18744da366ec8616c42ce2cdf43d9e0e8d82)
+
+
+### Product Details Page
+
+the product details page contains the details about the product and customers can add to cart.
+
+![home page](https://gomosorbucket.s3.amazonaws.com/Product_details_page.PNG?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAYS2NU2KI4WCNJTEX%2F20240114%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20240114T100754Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=433293bdbb28372643587340869b89824e632fc99c1425a03f3ff498806eaac6)
+
 
 ### About Page
 
 the about page provides detail about Ecommerce-Zone's. the about page has a call to action for the user to reserve a watch.
 
-![about page](/docs/screenshots/about.png)
+![about page](https://gomosorbucket.s3.amazonaws.com/abouCapture.PNG?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAYS2NU2KI4WCNJTEX%2F20240114%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20240114T095846Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=ea7247d5521add303f9b19f27846152f4322108d649dc3f0415a7e217cc0cd87)
 
-### Accessories Page
-
-the accessories page lists a static collection of accessories for the Ecommerce-Zone users. the accessories page has a call to action for the user to reserve a watch.
-
-![accessories page](/docs/screenshots/accessories.png)
-
-### Login Page
+### Login and Register Page
 
 the login page is a standard login form. the user provides their username and password. the login page provides a call action to sign up for a new account.
 
-![login page](/docs/screenshots/login.png)
-
-### Register Page
-
-the register page is a standard register form. the user provides their username and password. the register page provides a call action to log in with an existing account.
-
-![register page](/docs/screenshots/register.png)
+![login-page/egister-page](https://gomosorbucket.s3.amazonaws.com/registerCapture.PNG?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAYS2NU2KI4WCNJTEX%2F20240114%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20240114T100332Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=229ccec79e3c04b9a46a670ffc9f20e53e3616e95f5ba1f2928e278eec705db8)
 
 ### Contact Page
 
-the reserve page allows the user to see each of the watchs in the store and it's rentail availability. the reserve page allows the user to reserve a watch listed as available. the reserve page allows the users to cancel a currently reserved watch owned by them.
+the reserve page allows the user to see each of the watchs in the store. the reserve page allows the user to reserve a watch listed as available. the reserve page allows the users to cancel a currently reserved watch owned by them.
 
-![reserve page](/docs/screenshots/reserve.png)
+![Contact page](https://gomosorbucket.s3.amazonaws.com/ContactCapture.PNG?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAYS2NU2KI4WCNJTEX%2F20240114%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20240114T095846Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=bba75a8d23d493245178095527d4cc5af29d9fb71c3bcf213d6d1185487ce933)
 
-### Search watchs Page
+### Cart Page
 
-the manage watchs page allows a super user to see each of the watchs in the store and it's rentail availability. the manage watchs page allows a super user to return a reservation made by a customer.
+From here user can see items on cart
 
-![manage page](/docs/screenshots/manage.png)
+![manage page](https://gomosorbucket.s3.amazonaws.com/Cart-.PNG?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAYS2NU2KI4WCNJTEX%2F20240114%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20240114T100332Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=c98af10d2d1b4c4838419601103f07826443f022e116aec6569b07fa36a7ee6c)
+![manage page](https://gomosorbucket.s3.amazonaws.com/cart2.PNG?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAYS2NU2KI4WCNJTEX%2F20240114%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20240114T100332Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=07bc77b209ed0002832047c105835848622800d4fe5b1c41c33e1db546d3c47b)
+
+### Checkout Page
+
+Checkout page have a form that need to fillup with customer information
+
+![manage page](https://gomosorbucket.s3.amazonaws.com/checkout.PNG?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAYS2NU2KI4WCNJTEX%2F20240114%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20240114T100332Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=af9d21f173bc54f2fe090478c37ff8f92d1c85b7f878483505568f2f361f7272)
+
+### Payment Page
+
+There integrated stripe to pay the payment of the order.
+
+![manage page](https://gomosorbucket.s3.amazonaws.com/payment.PNG?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAYS2NU2KI4WCNJTEX%2F20240114%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20240114T100754Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=ee697e3783254f94cf259b3383e2383ceece0e45be438bf81111a853bd47dd42)
 
 ## Security For Ecommerce-Zones
 
@@ -236,7 +246,7 @@ Click the link below to view the agile board.
 
 the following are bugs currently known within the Ecommerce-Zone's application.
 
-### New Accounts Can Not View watchs To Rent
+### New Accounts Can Not View watchs
 
 	on the first login for a new user, there are no watchs available to view or reserve.
 
@@ -262,111 +272,16 @@ The Ubuntu Linux Server has the following specs:
 
     disk / 50 GiB
 
-### Deploy Postgres Database
-
-A postgress database is used for backend storage.
-
-The postgress database uses docker compose to run:
-
-```yaml
-version: "3"
-
-services:
-
-    roberts-watch-postgres:
-
-        container_name: roberts-watch-postgres
-        
-        image: postgres:14.1-alpine
-
-        restart: always
-
-        user: root
-
-        environment:
-
-            - POSTGRES_USER=robertswatc
-
-            - POSTGRES_DB=robertswatc
-
-            - POSTGRES_PASSWORD=roberts!watch
-
-        ports:
-
-            - "5432:5432"
-
-        volumes: 
-
-            - ./volume/postres:/var/lib/postgresql/data
- 
-    roberts-watch-pgadmin4:
-
-        container_name: roberts-watch-pgadmin4
-
-        user: root
-
-        image: dpage/pgadmin4
-        
-        restart: always
-
-        ports:
-        
-            - "5480:80"
-            
-        environment:
-        
-            PGADMIN_DEFAULT_EMAIL: robert@robertswatc.com
-            
-            PGADMIN_DEFAULT_PASSWORD: roberts!watch
-
-        volumes:
-        
-            - ./volume/pgadmin4:/var/lib/pgadmin            
-```
-
-running the docker-compose script to start the database.
-
-```bash
-docker-compose up -d
-```
-
-see the running docker containers on the linux server.
-
-```bash
-docker ps
-```
-
-### Deploying Ecommerce-Zone'
-
-The Ecommerce-Zone's application is executed by pulling the Ecommerce-Zone's source code from GitHub and executing the `quick-start.sh` script using the linux terminal.
-
-get the code from github.
-
-```bash
-git clone https://github.com/Gomsur/roberts-watch.git
-```
-
-enter the repo directory.
-
-```bash
-cd roberts-watch
-```
-
-```bash
-sudo nohup ./quick-start.sh &
-```
-
-nohup runs the application in the background after disconnecting from the terminal. if you don't put nohup, then the app closes when you disconnect.
 
 ### Preview Ecommerce-Zone's
 
-![Ecommerce-Zone Home](/docs/screenshots/home.png)
+![Ecommerce-Zone Home](https://gomosorbucket.s3.amazonaws.com/home1.PNG?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAYS2NU2KI4WCNJTEX%2F20240114%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20240114T095846Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=8e5edac74d6601f09384b52e5c84e8507639db60071da22ff97f6463022df157)
 
 Ecommerce-Zones is deployed and available for usage.
 
 Click the link below to access Ecommerce-Zones.
 
-[Access Ecommerce-Zone's](http://104.248.100.154/)
+[Access Ecommerce-Zone's](https://django-ecom-zone-1-70efee035f25.herokuapp.com/)
 
 ## Credits
 
@@ -382,8 +297,19 @@ The Ecommerce-Zone' application was build w/ help from the following resources a
 
 ## Quick Start Installation
 
-You can run Ecommerce-Zone's at home.
+get the code from github.
 
-Follow the instructions below on an Ubuntu Linux server.
+```bash
+git clone https://github.com/Gomsur/Project-EcommerceZone.git
+```
 
-[Quick Start Guide](/docs/quick-start.md)
+Install packages listed on requirements:
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the server :
+```bash
+python manage.py runserver
+```
