@@ -72,7 +72,7 @@ Ecommerce-Zone's is built with the following technologies.
 
 ## Ecommerce-Zones Features & Goals
 
-![Ecommerce-Zone Home](https://gomosorbucket.s3.amazonaws.com/home1.PNG?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAYS2NU2KI4WCNJTEX%2F20240114%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20240114T095846Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=8e5edac74d6601f09384b52e5c84e8507639db60071da22ff97f6463022df157)
+![Ecommerce-Zone Home](/docs/readme_images/Product_details_page.PNG)
 
 ### watch Guest Goals
 
@@ -168,53 +168,53 @@ Ecommerce-Zone's uses the `lumen` theme set.
 
 the home page is the initial landing page for Ecommerce-Zone's. the home provides text about Ecommerce-Zone's and what we offer.
 
-![home page](https://gomosorbucket.s3.amazonaws.com/home1.PNG?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAYS2NU2KI4WCNJTEX%2F20240114%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20240114T095846Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=8e5edac74d6601f09384b52e5c84e8507639db60071da22ff97f6463022df157)
-![home page](https://gomosorbucket.s3.amazonaws.com/Capture.PNG?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAYS2NU2KI4WCNJTEX%2F20240114%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20240114T095846Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=c9fb922a6868f5d140cf156f123c18744da366ec8616c42ce2cdf43d9e0e8d82)
+![home page](/docs/readme_images/Capture.PNG)
+![home page](/docs/readme_images/home1.PNG)
 
 
 ### Product Details Page
 
 the product details page contains the details about the product and customers can add to cart.
 
-![home page](https://gomosorbucket.s3.amazonaws.com/Product_details_page.PNG?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAYS2NU2KI4WCNJTEX%2F20240114%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20240114T100754Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=433293bdbb28372643587340869b89824e632fc99c1425a03f3ff498806eaac6)
+![home page](/docs/readme_images/Product_details_page.PNG)
 
 
 ### About Page
 
 the about page provides detail about Ecommerce-Zone's. the about page has a call to action for the user to reserve a watch.
 
-![about page](https://gomosorbucket.s3.amazonaws.com/abouCapture.PNG?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAYS2NU2KI4WCNJTEX%2F20240114%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20240114T095846Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=ea7247d5521add303f9b19f27846152f4322108d649dc3f0415a7e217cc0cd87)
+![about page](/docs/readme_images/abouCapture.PNG)
 
 ### Login and Register Page
 
 the login page is a standard login form. the user provides their username and password. the login page provides a call action to sign up for a new account.
 
-![login-page/egister-page](https://gomosorbucket.s3.amazonaws.com/registerCapture.PNG?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAYS2NU2KI4WCNJTEX%2F20240114%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20240114T100332Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=229ccec79e3c04b9a46a670ffc9f20e53e3616e95f5ba1f2928e278eec705db8)
+![login-page/egister-page](/docs/readme_images/registerCapture.PNG)
 
 ### Contact Page
 
 the reserve page allows the user to see each of the watchs in the store. the reserve page allows the user to reserve a watch listed as available. the reserve page allows the users to cancel a currently reserved watch owned by them.
 
-![Contact page](https://gomosorbucket.s3.amazonaws.com/ContactCapture.PNG?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAYS2NU2KI4WCNJTEX%2F20240114%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20240114T095846Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=bba75a8d23d493245178095527d4cc5af29d9fb71c3bcf213d6d1185487ce933)
+![Contact page](/docs/readme_images/ContactCapture.PNG)
 
 ### Cart Page
 
 From here user can see items on cart
 
-![manage page](https://gomosorbucket.s3.amazonaws.com/Cart-.PNG?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAYS2NU2KI4WCNJTEX%2F20240114%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20240114T100332Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=c98af10d2d1b4c4838419601103f07826443f022e116aec6569b07fa36a7ee6c)
-![manage page](https://gomosorbucket.s3.amazonaws.com/cart2.PNG?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAYS2NU2KI4WCNJTEX%2F20240114%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20240114T100332Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=07bc77b209ed0002832047c105835848622800d4fe5b1c41c33e1db546d3c47b)
+![cart page](/docs/readme_images/Cart-.PNG)
+![cart page](/docs/readme_images/cart2.PNG)
 
 ### Checkout Page
 
 Checkout page have a form that need to fillup with customer information
 
-![manage page](https://gomosorbucket.s3.amazonaws.com/checkout.PNG?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAYS2NU2KI4WCNJTEX%2F20240114%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20240114T100332Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=af9d21f173bc54f2fe090478c37ff8f92d1c85b7f878483505568f2f361f7272)
+![checkout page](/docs/readme_images/checkout.PNG)
 
 ### Payment Page
 
 There integrated stripe to pay the payment of the order.
 
-![manage page](https://gomosorbucket.s3.amazonaws.com/payment.PNG?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAYS2NU2KI4WCNJTEX%2F20240114%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20240114T100754Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=ee697e3783254f94cf259b3383e2383ceece0e45be438bf81111a853bd47dd42)
+![payment page](/docs/readme_images/payment.PNG)
 
 ## Security For Ecommerce-Zones
 
@@ -275,7 +275,7 @@ The Ubuntu Linux Server has the following specs:
 
 ### Preview Ecommerce-Zone's
 
-![Ecommerce-Zone Home](https://gomosorbucket.s3.amazonaws.com/home1.PNG?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAYS2NU2KI4WCNJTEX%2F20240114%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20240114T095846Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=8e5edac74d6601f09384b52e5c84e8507639db60071da22ff97f6463022df157)
+![Ecommerce-Zone Home](/docs/readme_images/home1.PNG)
 
 Ecommerce-Zones is deployed and available for usage.
 
