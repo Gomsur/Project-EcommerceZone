@@ -79,7 +79,7 @@
 							EN
 						</a>
 
-						<a href="#" class="flex-c-m trans-04 p-lr-25" style="color:#fff">
+						<a class="flex-c-m trans-04 p-lr-25" style="color:#fff">
 							USD
 						</a>
 					</div>
@@ -102,11 +102,6 @@
 						<ul class="main-menu">
 							<li class="{% block index %}{% endblock %}">
 								<a href="{% url 'index' %}">Shop</a>
-<!--								<ul class="sub-menu">-->
-<!--									<li><a href="index.html">Homepage 1</a></li>-->
-<!--									<li><a href="home-02.html">Homepage 2</a></li>-->
-<!--									<li><a href="home-03.html">Homepage 3</a></li>-->
-<!--								</ul>-->
 							</li>
 
 <!--							<li class="active-menu">-->
@@ -208,25 +203,33 @@
 			<ul class="topbar-mobile">
 				<li>
 					<div class="left-top-bar">
-						Free shipping for standard order over $100
+						Free shipping for standard order over $200
 					</div>
 				</li>
 
 				<li>
 					<div class="right-top-bar flex-w h-full">
-						<a href="#" class="flex-c-m p-lr-10 trans-04">
-							Help & FAQs
-						</a>
+<!--						<a href="#" class="flex-c-m p-lr-10 trans-04">-->
+<!--							Help & FAQs-->
+<!--						</a>-->
+						{% if request.user.is_authenticated %}
 
-						<a href="#" class="flex-c-m p-lr-10 trans-04">
-							My Account
+						<a href="{% url 'profile' %}" class="flex-c-m p-lr-10 trans-04">
+							My Profile
 						</a>
+						{% else %}
+						<a class="flex-c-m p-lr-10 trans-04" href="{% url 'signup_login' %}">
+							Login/Sign Up
+						</a>
+						{% endif %}
 
-						<a href="#" class="flex-c-m p-lr-10 trans-04">
+
+
+						<a class="flex-c-m p-lr-10 trans-04">
 							EN
 						</a>
 
-						<a href="#" class="flex-c-m p-lr-10 trans-04">
+						<a class="flex-c-m p-lr-10 trans-04">
 							USD
 						</a>
 					</div>
@@ -235,12 +238,7 @@
 
 			<ul class="main-menu-m">
 				<li>
-					<a href="index.html">Home</a>
-<!--					<ul class="sub-menu-m">-->
-<!--						<li><a href="index.html">Homepage 1</a></li>-->
-<!--						<li><a href="home-02.html">Homepage 2</a></li>-->
-<!--						<li><a href="home-03.html">Homepage 3</a></li>-->
-<!--					</ul>-->
+					<a href="{% url 'index' %}">Shop</a>
 					<span class="arrow-main-menu-m">
 						<i class="fa fa-angle-right" aria-hidden="true"></i>
 					</span>
@@ -421,7 +419,7 @@
 					<ul>
 						<li class="p-b-10">
 							<a href="{% url 'index' %}" target="_blank" class="stext-107 cl7 hov-cl1 trans-04">
-								Home
+								Shop
 							</a>
 						</li>
 
